@@ -1,0 +1,44 @@
+"*":
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui": {}
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "markdown-preview"
+      "language-gfm"
+    ]
+    openEmptyEditorOnStart: false
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    uriHandlerRegistration: "always"
+  "document-outline":
+    showByDefault: false
+  editor:
+    fontSize: 16
+    preferredLineLength: 79
+    showIndentGuide: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "d5d8c099-e72f-4a24-9952-cc007c73f4ea"
+  "ide-c-cpp":
+    languageServerCmd: "cquery"
+  "ide-cquery":
+    enableSemanticHighlighting: true
+  "markdown-preview": {}
+  "markdown-preview-plus":
+    syncConfig:
+      syncEditorOnPreviewScroll: true
+      syncPreviewOnEditorScroll: true
+  "nav-panel": {}
+  "nav-panel-plus":
+    collapsedGroups: "Variable,Method,"
+    noDups: false
+  welcome:
+    showOnStartup: false
+".python.source":
+  editor:
+    autoIndentOnPaste: false

@@ -1,0 +1,2 @@
+'atom-text-editor':
+  'ctrl-alt-m': 'bracket-matcher:select-matching-brackets'
