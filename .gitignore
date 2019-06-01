@@ -59,3 +59,14 @@ typings/
 
 # next.js build output
 .next
+
+# Specifics
+/.apm/
+/.node-gyp/
+/blob-store/
+/compile-cache/
+/packages/
+/recovery/
+/storage/
+.atom-socket*
+/github.cson
