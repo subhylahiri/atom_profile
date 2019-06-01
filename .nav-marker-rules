@@ -1,0 +1,8 @@
+#marker-rule: /\n\*\*[ ]*([^\s\*].*)[ ]*\*\*/||%1||Section||ext=.c,.src,.h
+#marker-rule: /\n\*[ ]*([^\s\*].*)[ ]*\*/||____%1||Section||ext=.c,.src,.h
+
+#marker-rule: /%% (.*)\r?\n# =/||%1||Section||ext=.py
+#marker-rule: /%% (.*)\r?\n# -/||____%1||Section||ext=.py
+#marker-rule: /^[ ]*class (\w+)\(/m||%1||Class||ext=.py
+#marker-rule: /^[ ]*def (\w+)\((?!(self|cls))/m||%1||Function||ext=.py
+#marker-rule: /^[ ]*def (\w+)\((?:self|cls)/m||%1||Method||ext=.py

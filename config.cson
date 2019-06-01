@@ -1,44 +1,57 @@
 "*":
-  "atom-ide-ui":
-    "atom-ide-diagnostics-ui": {}
+  "atom-terminal":
+    app: "%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
   core:
-    closeDeletedFileTabs: true
     disabledPackages: [
-      "markdown-preview"
+      "atom-terminal"
+      "hydrogen-python"
       "language-gfm"
+      "markdown-preview"
+      "Hydrogen"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
     themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
+      "one-light-ui"
+      "solarized-light-syntax"
     ]
     uriHandlerRegistration: "always"
   "document-outline":
     showByDefault: false
   editor:
-    fontSize: 16
+    fontSize: 15
     preferredLineLength: 79
     showIndentGuide: true
     tabLength: 4
     tabType: "soft"
   "exception-reporting":
-    userId: "d5d8c099-e72f-4a24-9952-cc007c73f4ea"
-  "ide-c-cpp":
-    languageServerCmd: "cquery"
-  "ide-cquery":
-    enableSemanticHighlighting: true
-  "markdown-preview": {}
+    userId: "ee538cd1-7a20-4532-8d9a-859342949391"
+  "highlight-selected":
+    lightTheme: true
+    showResultsOnScrollBar: true
+  "hydrogen-python":
+    expandCode: true
+  "ide-python":
+    pylsPlugins:
+      pydocstyle: {}
+      pylint:
+        enabled: true
   "markdown-preview-plus":
     syncConfig:
       syncEditorOnPreviewScroll: true
       syncPreviewOnEditorScroll: true
-  "nav-panel": {}
+    syntaxThemeName: "one-light-syntax"
   "nav-panel-plus":
-    collapsedGroups: "Variable,Method,"
     noDups: false
   welcome:
     showOnStartup: false
-".python.source":
+".basic.html.text":
   editor:
-    autoIndentOnPaste: false
+    tabLength: 2
+".md.text":
+  whitespace:
+    removeTrailingWhitespace: false
