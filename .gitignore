@@ -70,3 +70,4 @@ typings/
 /storage/
 .atom-socket*
 /github.cson
+config.cson
