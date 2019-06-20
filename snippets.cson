@@ -36,6 +36,9 @@
         # %%* ${1:subsection}
         # -----------------------------------------------------------------------------
         """
+    'None':
+        'prefix': 'none'
+        'body':"None"
     'Parameters':
         'prefix': 'pardoc'
         'body':"""
@@ -50,9 +53,19 @@
         -------
         ${1:out}
         """
+    'Keyword only':
+        'prefix': 'keydoc'
+        'body':"""
+        Keyword only
+        ------------
+        ${1:out}
+        """
     'Optionals':
         'prefix': 'args'
         'body':"*args, **kwds"
+    'Keywords':
+        'prefix': 'kwds'
+        'body':"**kwds"
     'Numpy':
         'prefix': 'inp'
         'body': "import numpy as np"
