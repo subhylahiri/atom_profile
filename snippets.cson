@@ -22,6 +22,21 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
 '.source.python':
+    'Optionals':
+        'prefix': 'args'
+        'body':"*args, **kwds"
+    'Keywords':
+        'prefix': 'kwds'
+        'body':"**kwds"
+    'Numpy':
+        'prefix': 'inp'
+        'body': "import numpy as np"
+    'PyPlot':
+        'prefix': 'impl'
+        'body':"""
+        import matplotlib as mpl
+        import matplotlib.pyplot as plt
+        """
     'Section':
         'prefix': 'sctn'
         'body': """
@@ -60,18 +75,17 @@
         ------------
         ${1:out}
         """
-    'Optionals':
-        'prefix': 'args'
-        'body':"*args, **kwds"
-    'Keywords':
-        'prefix': 'kwds'
-        'body':"**kwds"
-    'Numpy':
-        'prefix': 'inp'
-        'body': "import numpy as np"
-    'PyPlot':
-        'prefix': 'impl'
+    'See Also':
+        'prefix': 'seedoc'
         'body':"""
-        import matplotlib as mpl
-        import matplotlib.pyplot as plt
+        See Also
+        --------
+        ${1:other}
+        """
+    'Notes':
+        'prefix': 'notedoc'
+        'body':"""
+        Notes
+        -----
+        ${1:note}
         """
