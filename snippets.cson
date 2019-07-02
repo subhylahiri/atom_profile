@@ -37,6 +37,15 @@
         import matplotlib as mpl
         import matplotlib.pyplot as plt
         """
+    'None':
+        'prefix': 'none'
+        'body':"None"
+    'If None':
+        'prefix': 'ifnone'
+        'body':"""
+        if ${1:variable} is ${2:not }None:
+            ${3:pass}
+        """
     'Section':
         'prefix': 'sctn'
         'body': """
@@ -51,9 +60,6 @@
         # %%* ${1:subsection}
         # -----------------------------------------------------------------------------
         """
-    'None':
-        'prefix': 'none'
-        'body':"None"
     'Parameters':
         'prefix': 'pardoc'
         'body':"""
