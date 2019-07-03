@@ -95,3 +95,10 @@
         -----
         ${1:note}
         """
+    'Routines':
+        'prefix': 'routinedoc'
+        'body':"""
+        Routine Listings
+        ----------------
+        ${1:routine}
+        """
