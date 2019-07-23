@@ -79,7 +79,14 @@
         'body':"""
         Keyword only
         ------------
-        ${1:out}
+        ${1:kwd}
+        """
+    'Raises':
+        'prefix': 'raisedoc'
+        'body':"""
+        Raises
+        ------
+        ${1:Exception}
         """
     'See Also':
         'prefix': 'seedoc'
