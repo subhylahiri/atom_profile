@@ -35,3 +35,5 @@
   'ctrl-alt-/': 'bracket-matcher:remove-brackets-from-selection'
   'ctrl-alt-m': 'bracket-matcher:select-matching-brackets'
   'ctrl-alt-;': 'bracket-matcher:go-to-enclosing-bracket'
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-{': 'editor:fold-selection'
